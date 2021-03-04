@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginStart="@dimen/margin_back_left"
+    android:layout_marginEnd="@dimen/margin_back_left"
+    android:layout_marginTop="@dimen/margin_small_size"
+    android:background="@drawable/table_btn_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/item_iot_device_connect_step_img"
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        />
+
+    <TextView
+        android:id="@+id/item_iot_device_connect_step_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第一步"
+        android:textSize="@dimen/text_large_size"
+        android:textColor="@color/color_3E3E3E"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/padding_text_normal_size"
+        android:layout_marginBottom="@dimen/padding_text_normal_size"/>
+
+    <TextView
+        android:id="@+id/item_iot_device_connect_step_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_9E9E9E"
+        android:textSize="@dimen/text_small_size"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="接通电源，使设备与网关处于有效通讯距离内 L火线 N零线 LI为灯线"
+        android:layout_marginBottom="@dimen/margin_normal_size"/>
+</LinearLayout>

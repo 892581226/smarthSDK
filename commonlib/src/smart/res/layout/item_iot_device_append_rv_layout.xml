@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/item_iot_device_append_linear">
+
+    <ImageView
+        android:id="@+id/item_iot_device_append_img"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/icon_iot_hilink_gas_leakage" />
+
+    <TextView
+        android:id="@+id/item_iot_device_append_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/padding_text_normal_size"
+        android:text="品牌设备类型"
+        android:textColor="@color/color_3E3E3E"
+        android:textSize="@dimen/text_small_size" />
+</LinearLayout>

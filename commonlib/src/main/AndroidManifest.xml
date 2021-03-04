@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smarthome">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 萤石摄像头start -->
+    <!-- UIKit -->
+    <!-- <uses-permission android:name="android.permission.INTERNET"/> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> -->
+    <!-- <uses-permission android:name="android.permission.FLASHLIGHT"/> -->
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE"/> -->
+    <!-- <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> -->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> -->
+    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> -->
+    <!-- //网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- //存储权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> -->
+    <!-- //wifi 状态权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" /> <!-- //热点配网扫描wifi需要使用 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application>
+        <activity android:name=".iot.TeanaMusicActivity"/>
+        <activity android:name=".iot.dveview.CustomSwitchActivity"/>
+        <activity android:name=".iot.dveview.HlSmartSocket" />
+        <activity android:name=".iot.dveview.WaterAlarmActivity" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <activity
+            android:name=".iot.hkcateye.AlreadyBindHYCatEyeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity android:name=".iot.hkcateye.ManualInputDeviceHotspotInfoActivity" />
+        <activity android:name=".iot.hkcateye.ConfigWifiExecutingActivity" />
+        <activity android:name=".iot.hkcateye.ManualChooseConfigWifiWayActivity" />
+        <activity android:name=".iot.hkcateye.AutoWifiNetConfigActivity" />
+        <activity android:name=".iot.hkcateye.AutoWifiResetActivity" />
+        <activity android:name=".iot.hkcateye.AutoWifiPrepareStepOneActivity" />
+        <activity android:name=".iot.hkcateye.NoBindHYCatEyeActivity" />
+        <activity android:name=".iot.SmartSocketActivity" />
+        <activity android:name=".iot.DoubleCurtainSwitchActivity" />
+        <activity android:name=".iot.TransferFamilyActivity" />
+        <activity android:name=".iot.DeviceAllActivity" />
+        <activity android:name=".iot.DeviceConnectStepActivity" />
+        <activity android:name=".iot.FamilyRoomActivity" />
+        <activity android:name=".iot.GatewayNetSettingActivity" />
+        <activity android:name=".iot.IconUpdateActivity" />
+        <activity android:name=".iot.RoomAppendActivity" />
+        <activity android:name=".iot.RoomManageActivity" />
+        <activity android:name=".iot.SceneAppendActivity" />
+        <activity android:name=".iot.SceneManageActivity" />
+        <activity android:name=".iot.SceneSwitchStatusActivity" />
+        <activity android:name=".iot.SceneUpdateActivity" />
+        <activity android:name=".iot.impl.device.GateDeviceActivity" />
+        <activity android:name=".iot.impl.DeviceAppendActivity" />
+        <activity android:name=".iot.ScanAddDeviceActivity" />
+        <activity
+            android:name=".iot.AddDeviceFailureActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".iot.AddDeviceSuccessActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".iot.HumitureSensorActivity" />
+        <activity android:name=".iot.HumanSensorActivity" />
+        <activity android:name=".iot.DoorMagnetActivity" />
+        <activity android:name=".iot.CurtainSwitchActivity" />
+        <activity android:name=".iot.FourBitSwitchActivity" />
+        <activity android:name=".iot.DoubleBitSwitchActivity" />
+        <activity android:name=".iot.SingleBitSwitchActivity" />
+        <activity android:name=".iot.DeviceInfoActivity" />
+        <activity android:name=".iot.ThreeBitSwitchActivity" />
+        <activity android:name=".iot.DeviceSearchActivity" />
+        <activity android:name=".iot.SceneSwitchActivity" />
+        <activity android:name=".iot.SceneSwitchKeyActivity" />
+        <activity android:name=".iot.SceneSixSwitchActivity" />
+        <activity android:name=".iot.ShareFamilyActivity" />
+        <activity android:name=".iot.SharePhoneActivity" /> <!-- 萤石 uikit -->
+        <!-- <activity android:name=".iot.yscamera.YsCameraUikitActivity" /> -->
+        <!-- //萤石 -->
+        <!-- <activity android:name=".iot.yscamera.YsCameraActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity android:name=".iot.yscamera.YsCameraListActivity" /> -->
+        <!-- <activity android:name=".iot.yscamera.YsAddCameraActivity" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.videogo.main.EzvizWebViewActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:configChanges="orientation|keyboardHidden"> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".iot.yscamera.YsCaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/YscameraTheme" /> <!-- <activity android:name=".iot.yscamera.ManualSnActivity" /> -->
+        <!-- <activity android:name=".iot.yscamera.YscameraNetSettingActivity" /> -->
+        <!-- <activity android:name=".iot.yscamera.YsCameraFoundActivity" /> -->
+        <!-- <activity android:name=".iot.yscamera.YsCameraNetSettingTipsActivity" /> -->
+        <!-- <activity android:name=".iot.yscamera.YsAddDevicePercentActivity" /> -->
+        <!-- <activity android:name=".iot.yscamera.YsDeviceInfoActivity" /> -->
+        <activity
+            android:name=".iot.impl.device.gateway.activity.AppendGatewayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/appTheme_no_bar" />
+        <activity
+            android:name=".iot.impl.device.gateway.activity.AppendGatewayActivity_two"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/appTheme_no_bar" />
+        <activity
+            android:name=".iot.impl.device.gateway.activity.DeviceConnectStepActivity_gateway"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/appTheme_no_bar" />
+        <activity
+            android:name=".iot.impl.device.gateway.activity.GatewayNetSettingActivity_gateway"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".iot.impl.device.gateway.activity.ScanAddDeviceActivity_gateway"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/appTheme_no_bar" />
+        <activity
+            android:name=".iot.impl.device.gateway.activity.AddDeviceFailureActivity_gateway"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".iot.impl.device.gateway.activity.AddDeviceSuccessActivity_gateway"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".iot.impl.device.thermostat.activity.TherMostatMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/appTheme_no_bar" />
+        <activity
+            android:name=".iot.impl.device.infraredscreen.activity.InFraredScreenActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/appTheme_no_bar" />
+        <activity
+            android:name=".iot.impl.device.infraredscreen.activity.InFraredScreenActivity_two"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/appTheme_no_bar" />
+        <activity
+            android:name=".iot.impl.device.infraredscreen.activity.InFraredScreenActivity_three"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/appTheme_no_bar" />
+        <activity
+            android:name=".iot.impl.device.negativecontrol.activity.NegativeControlActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/appTheme_no_bar" />
+        <activity
+            android:name=".iot.impl.device.negativecontrol.activity.NegativeControlActivity_two"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/appTheme_no_bar" />
+        <activity
+            android:name=".iot.impl.device.negativecontrol.activity.NegativeControlActivity_Three"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/appTheme_no_bar" />
+        <activity
+            android:name=".iot.impl.DeviceAppendActivity_2"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/appTheme_no_bar" />
+        <activity
+            android:name=".iot.SceneSwitchStatusActivity_WindowCurtains"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".iot.impl.device.cateye.activity.ElectronicCatEyeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".iot.impl.device.cateye.activity.AlreadyBindCatEyeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".iot.impl.device.cateye.activity.NoBindCatEyeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".iot.impl.device.cateye.activity.VideoCallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".iot.impl.device.cateye.activity.AlarmListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".iot.impl.device.cateye.activity.InComingCallsActivity"
+            android:launchMode="singleTask"
+            android:noHistory="false"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.yaokantv.yaokanui.RoomMsgActivity"></activity>
+        <activity android:name="com.yaokantv.yaokanui.DeviceListActivity" />
+        <activity android:name="com.yaokantv.yaokanui.SoftApConfigActivity" />
+        <activity android:name="com.yaokantv.sdkdemo.AppleCtrlListActivity" />
+        <activity android:name="com.yaokantv.sdkdemo.RfMatchActivity" />
+        <activity android:name="com.yaokantv.sdkdemo.MainActivity">
+        </activity>
+        <activity
+            android:name="com.yaokantv.sdkdemo.MatchActivity"
+            android:label="一级匹配" />
+        <activity
+            android:name="com.yaokantv.sdkdemo.SecondMatchActivity"
+            android:label="二级匹配" />
+        <activity
+            android:name="com.yaokantv.yaokanui.RcListActivity"
+            android:label="遥控器列表" />
+        <activity
+            android:name="com.yaokantv.sdkdemo.RcActivity"
+            android:label="遥控器详情"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.yaokantv.sdkdemo.BrandActivity"
+            android:label="遥控器品牌" />
+        <activity
+            android:name="com.yaokantv.sdkdemo.SelectProviderActivity"
+            android:label="电视运营商" />
+        <activity android:name="com.yaokantv.sdkdemo.InitActivity" />
+        <activity android:name="com.yaokantv.yaokanui.SelectDeviceActivity" />
+        <activity android:name="com.yaokantv.yaokanui.BrandListActivity" />
+        <activity android:name="com.yaokantv.yaokanui.SelectProviderActivity" />
+        <activity android:name="com.yaokantv.yaokanui.NewMatchActivity" />
+        <activity android:name="com.yaokantv.yaokanui.RcActivity" />
+        <activity android:name="com.yaokantv.yaokanui.SettingActivityYK" />
+        <activity android:name="com.yaokantv.yaokanui.SecondMatchActivity" />
+    </application>
+
+</manifest>

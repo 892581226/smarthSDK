@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/parent_view"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/room_device_pager_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/iot_room_device_default"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <!--  <ImageView
+            android:id="@+id/iot_room_device_default_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_iot_smart_home_banner"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="38dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            />-->
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iot_room_device_default_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bg_iot_smart_home_add_device" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_item_two_line"
+    android:id="@+id/item_iot_device_search_item"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/device_curtain_close"
+            android:id="@+id/item_iot_device_search_img"
+            />
+
+        <TextView
+            android:id="@+id/item_iot_device_search_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="品牌设备类型型号展示"
+            android:textSize="@dimen/text_large_size"
+            android:textColor="@color/color_3E3E3E"
+            android:layout_marginStart="@dimen/base_margin_size"
+            android:gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:src="@drawable/right"
+            android:layout_marginEnd="@dimen/margin_item"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_D5D5D5"/>
+</LinearLayout>

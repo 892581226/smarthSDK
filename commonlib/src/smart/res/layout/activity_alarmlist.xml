@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_yesterDay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="昨天"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_nowaDays"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="今天"
+            android:textColor="#FF0000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_tomorrow"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="明天"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e1e1e1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_alarmList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#e1e1e1"
+            android:dividerHeight="1px"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="今天没有报警"
+            android:textColor="#FF0000"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</LinearLayout>

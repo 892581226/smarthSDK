@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f3f3f3">
+
+    <include layout="@layout/top_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备位置"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:layout_centerVertical="true"/>
+
+        <com.xhwl.commonlib.uiutils.ClearEditText
+            android:id="@+id/location_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:background="@null"
+            android:textColor="@color/color_333333"
+            android:textSize="14dp"
+            android:gravity="center|end"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:paddingStart="@dimen/margin_item"
+            android:paddingEnd="@dimen/margin_item"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/tv_name"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/drawable_5f62ff_to_598df3"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="t21_dev_support_operation">
+        <item>登录</item>
+        <item>添加设备</item>
+        <item>确认添加设备</item>
+        <item>获取设备列表</item>
+        <item>获取设备详情</item>
+        <item>设置设备昵称</item>
+        <item>视频拨打</item>
+        <item>语音拨打</item>
+        <item>打开PIR</item>
+        <item>打开门铃灯</item>
+        <item>设置自动抓拍时间</item>
+        <item>设置侦测灵敏度</item>
+        <item>设置报警模式</item>
+        <item>获取报警消息列表</item>
+        <item>报警缩略图URL</item>
+        <item>报警文件URL</item>
+        <item>报警文件下载示例</item>
+        <item>删除报警消息</item>
+        <item>门铃图片URL</item>
+        <item>获取门铃记录</item>
+        <item>删除门铃记录</item>
+        <item>设置逗留警示音</item>
+        <item>设置逗留警示音音量</item>
+        <item>设置逗留报警时间</item>
+        <item>设置门铃音</item>
+        <item>设置门铃音量</item>
+        <item>设置图像分辨率</item>
+        <item>设置屏幕超时</item>
+        <item>设置屏幕亮度</item>
+        <item>通知设备端远程升级</item>
+        <item>恢复出厂设置</item>
+        <item>远程重启</item>
+        <item>删除设备</item>
+        <item>退出登录</item>
+        <item>配置参数</item>
+    </string-array>
+
+</resources>

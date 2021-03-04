@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配网方式: "
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_config"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/cb_soft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="SoftAp" />
+
+            <RadioButton
+                android:visibility="gone"
+                android:id="@+id/cb_smart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SmartConfig" />
+
+            <RadioButton
+                android:visibility="gone"
+                android:id="@+id/cb_hot_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机热点配网" />
+            <RadioButton
+                android:visibility="gone"
+                android:id="@+id/cb_param"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="参数配网" /> </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="配网设备: "
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/cb_1101"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="小苹果" />
+
+                <RadioButton
+                    android:visibility="gone"
+                    android:id="@+id/cb_1103"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="大苹果" />
+
+                <RadioButton
+                    android:visibility="gone"
+                    android:id="@+id/cb_ds16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="空调伴侣" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网络:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_ssid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_psw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:id="@+id/btn_smart_config"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_cir_main_20"
+        android:onClick="onClick"
+        android:text="@string/start_ap_config" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/net_config_ts"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/album_sp_20"/>
+    <TextView
+        android:id="@+id/tv_cfg_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:lineHeight="@dimen/dp_22"
+        android:hint="@string/net_config_ap_tips"
+        android:textSize="16sp"
+        tools:ignore="UnusedAttribute" />
+</LinearLayout>

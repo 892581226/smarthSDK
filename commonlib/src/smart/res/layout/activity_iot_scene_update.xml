@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/scene_update_top_layout"
+        layout="@layout/top_layout"/>
+
+    <View
+        android:id="@+id/scene_update_top_margin_view"
+        android:layout_width="match_parent"
+        android:background="@color/base_bg_gray"
+        android:layout_height="@dimen/margin_actionsheet_left_right"
+        app:layout_constraintTop_toBottomOf="@+id/scene_update_top_layout"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/scene_update_name_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_single_line"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/scene_update_top_margin_view"
+        android:paddingStart="@dimen/margin_item"
+        android:paddingEnd="@dimen/margin_item">
+
+        <TextView
+            android:id="@+id/scene_update_name_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="场景名称"
+            android:textSize="@dimen/text_large_size"
+            android:textColor="@color/color_333333"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.xhwl.commonlib.uiutils.ClearEditText
+            android:id="@+id/scene_update_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="回家模式"
+            android:hint="请输入场景名称"
+            android:textColor="@color/color_3E3E3E"
+            android:textSize="@dimen/text_normal_size"
+            android:gravity="center|end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/scene_update_cut"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="当手动点击"
+        android:textColor="@color/color_9E9E9E"
+        android:background="@color/color_F9F9F9"
+        android:paddingStart="@dimen/margin_item"
+        android:textSize="@dimen/text_normal_size"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/scene_update_name_info"/>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/scene_update_icon_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_single_line"
+        app:layout_constraintTop_toBottomOf="@+id/scene_update_cut"
+        android:background="@color/white"
+        android:paddingStart="@dimen/margin_item"
+        android:paddingEnd="@dimen/margin_item">
+
+        <TextView
+            android:id="@+id/scene_update_icon_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="场景图标"
+            android:textSize="@dimen/text_large_size"
+            android:textColor="@color/color_333333"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.xhwl.commonlib.uiutils.CircleImageView
+            android:id="@+id/scene_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_iot_scene_go_home"
+            android:textSize="@dimen/text_normal_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/scene_update_icon"
+            />
+
+        <ImageView
+            android:id="@+id/scene_update_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="@dimen/margin_small_size"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/scene_update_cut_linear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/base_bg_gray"
+        app:layout_constraintTop_toBottomOf="@+id/scene_update_icon_layout">
+
+        <TextView
+            android:id="@+id/scene_update_icon_cut"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="就执行"
+            android:paddingStart="@dimen/margin_item"
+            android:background="@color/base_bg_gray"
+            android:textSize="@dimen/text_normal_size"
+            android:textColor="@color/text_gray_9e_color"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/scene_update_device_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="添加设备"
+            android:paddingStart="@dimen/margin_item"
+            android:paddingEnd="@dimen/margin_item"
+            android:textSize="@dimen/text_normal_size"
+            android:textColor="@color/yellow"
+            android:gravity="center_vertical"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/scene_update_device_text"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/margin_back_left"
+        android:paddingEnd="@dimen/margin_back_left"
+        android:text="添加设备"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/text_large_size"
+        app:layout_constraintTop_toBottomOf="@id/scene_update_cut_linear" />
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/scene_update_device_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="@dimen/margin_small_size"
+        android:layout_marginEnd="@dimen/margin_small_size"
+        app:layout_constraintBottom_toTopOf="@+id/scene_update_save_btn"
+        app:layout_constraintTop_toBottomOf="@id/scene_update_cut_linear"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/scene_update_save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_base_btn"
+        android:layout_marginLeft="@dimen/margin_top_right"
+        android:layout_marginRight="@dimen/margin_top_right"
+        android:layout_marginBottom="@dimen/margin_item"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="保存"
+        android:background="@drawable/bg_bottom_btn"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

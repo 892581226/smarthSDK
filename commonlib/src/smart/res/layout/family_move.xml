@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginRight="@dimen/album_dp_10"
+    android:layout_marginLeft="@dimen/album_dp_10"
+    android:layout_marginTop="@dimen/album_dp_30"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="家庭名称"
+        />
+    <TextView
+        android:layout_marginLeft="@dimen/album_dp_100"
+        android:id="@+id/family_name"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:layout_width="@dimen/album_dp_200"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/move_family_tv"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_blue_corner_white_12t"
+        android:text="移交"
+        android:textColor="@color/yellow"/>
+
+</RelativeLayout>

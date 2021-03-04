@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources  xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="line">#a9a9a9</color>
+    <color name="main_ctrl_btn_color_click">#ff2dafeb</color>
+    <color name="main_ctrl_btn_color">#ff1fafef</color>
+<!--
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+-->
+    <color name="trans_10">#20ffffff</color>
+
+    <color name="text_gray">#aaaaaa</color>
+    <color name="top_gray">#f2f2f2</color>
+    <color name="top_gray_deep">#e1e1e1</color>
+    <color name="top_gray33">#66f2f2f2</color>
+    <color name="tran_half">#66ffffff</color>
+    <color name="trans_33">#66ffffff</color>
+    <color name="tag_color">#7f7f7f</color>
+    <color name="tag_blue_bg">#3797fc</color>
+    <color name="provider_bg">#2DB0EC</color>
+    <color name="line_bg">#20ffffff</color>
+    <color name="trans_50">#80ffffff</color>
+    <color name="trans_black_50">#30000000</color>
+    <drawable name="button_text_white">#FFFFFF</drawable>
+    <drawable name="button_text_gray" tools:ignore="MissingDefaultResource">#b4b4b4</drawable>
+    <drawable name="button_text_black">#000000</drawable>
+</resources>

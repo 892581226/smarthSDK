@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:paddingStart="@dimen/margin_item"
+    android:background="@color/white">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/item_scene_layout"
+        android:layout_width="0dp"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item_scene_switch_linear">
+        <ImageView
+            android:id="@+id/item_scene_delete_iv"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:padding="7dp"
+            android:src="@drawable/delete_room_ico"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_scene_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/get_up"
+            android:textColor="@color/text_dark_color"
+            android:textSize="@dimen/text_large_size"
+            app:layout_constraintStart_toEndOf="@+id/item_scene_delete_iv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_scene_dev_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="12个设备/6个在线"
+            android:textColor="@color/text_gray_a5_color"
+            android:textSize="@dimen/text_small_size"
+            app:layout_constraintLeft_toRightOf="@+id/item_scene_delete_iv"
+            app:layout_constraintTop_toBottomOf="@+id/item_scene_name_tv" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/item_scene_switch_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/item_scene_switch_tv"
+            android:layout_width="56dp"
+            android:layout_height="24dp"
+            android:text="启用"
+            android:gravity="center"
+            android:textColor="@color/yellow"
+            android:background="@drawable/btn_blue_corner_white_12t"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginEnd="@dimen/margin_small_size"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="@dimen/margin_small_size"
+            android:src="@drawable/right" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/scene_name_divline"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_D5D5D5"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="168dp"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_marginRight="@dimen/margin_text_normal_size"
+    android:layout_marginTop="@dimen/margin_small_size"
+    android:background="@drawable/border_stoke_corner_white_5t_normal"
+    android:id="@+id/item_iot_device_linear">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    <TextView
+        android:id="@+id/item_iot_device_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_normal_size"
+        android:layout_marginTop="@dimen/margin_normal_size"
+        android:layout_marginEnd="@dimen/margin_normal_size"
+        android:text="门锁类设备"
+        android:textColor="@color/color_9E9E9E"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/text_large_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".857"/>
+
+    <ImageView
+        android:id="@+id/item_iot_device_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_small_size"
+        android:layout_marginEnd="@dimen/margin_small_size"
+        android:src="@drawable/icon_iot_no_choose"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/item_iot_device_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_iot_device_name"
+        android:layout_marginStart="@dimen/margin_normal_size"
+        android:layout_marginTop="@dimen/margin_normal_size"
+        android:text="主卧"
+        android:textColor="@color/text_gray_9e_color"
+        android:textSize="@dimen/text_normal_size"
+        app:layout_constraintTop_toBottomOf="@id/item_iot_device_name"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/margin_normal_size"
+        android:paddingBottom="@dimen/margin_base_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/item_iot_device_online_type_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_iot_device_offline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/item_iot_device_online_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/padding_text_normal_size"
+            android:text="离线"
+            android:textColor="@color/text_gray_9e_color"
+            android:textSize="@dimen/text_small_size"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/item_iot_device_online_type_img"/>
+    </android.support.constraint.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/item_iot_device_img"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/icon_iot_double_control_switch"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent=".321"
+            app:layout_constraintHeight_percent=".383"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

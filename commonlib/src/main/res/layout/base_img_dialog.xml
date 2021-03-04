@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_base_dialog">
+
+    <ImageView
+        android:id="@+id/base_dialog_close_iv"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:src="@drawable/login_close"
+        android:layout_marginTop="@dimen/margin_base_size"
+        android:layout_marginRight="@dimen/margin_base_size"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/base_dialog_img_iv"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/color_3E3E3E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/base_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="标题单行"
+        android:textColor="@color/black"
+        android:textSize="@dimen/second_navigation_size"
+        android:layout_marginTop="@dimen/margin_tiny_size"
+        app:layout_constraintTop_toBottomOf="@+id/base_dialog_img_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/base_dialog_info_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:textSize="@dimen/text_normal_size"
+        android:textColor="@color/color_3E3E3E"
+        app:layout_constraintTop_toBottomOf="@+id/base_dialog_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="说明当前状态、提示用户解决方案，最好不要超过两行"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_DDE0E6"
+        app:layout_constraintBottom_toTopOf="@+id/base_dialog_confirm_tv"/>
+    <TextView
+        android:id="@+id/base_dialog_confirm_tv"
+        android:layout_width="96dp"
+        android:layout_height="36dp"
+        android:text="确定"
+        android:textColor="@color/base_blue"
+        android:textSize="@dimen/text_large_size"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dp_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

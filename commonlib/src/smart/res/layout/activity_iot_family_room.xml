@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".iot.FamilyRoomActivity" >
+
+    <include
+        android:id="@+id/family_room_top_layout"
+        layout="@layout/top_layout"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_cut_off"
+        android:id="@+id/family_room_height_cut"
+        android:background="@color/color_F9F9F9"
+        app:layout_constraintTop_toBottomOf="@+id/family_room_top_layout"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/family_room_name_info"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/height_item_single_line"
+        app:layout_constraintTop_toBottomOf="@+id/family_room_height_cut"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingStart="@dimen/margin_item"
+        android:paddingEnd="@dimen/margin_item">
+
+        <TextView
+            android:id="@+id/family_room_name_title"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="家庭名称"
+            android:textSize="@dimen/text_large_size"
+            android:textColor="@color/color_333333"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.xhwl.commonlib.uiutils.ClearEditText
+            android:id="@+id/family_room_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="我的家"
+            android:textColor="@color/color_3E3E3E"
+            android:hint="请输入家庭名称"
+            android:paddingStart="@dimen/margin_large_plus_size"
+            android:textSize="@dimen/text_normal_size"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:gravity="center|end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/family_room_family_cut_small"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_D5D5D5"
+        android:layout_marginStart="@dimen/margin_item"
+        app:layout_constraintTop_toBottomOf="@+id/family_room_name_info" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/family_room_all_device"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_single_line"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/family_room_family_cut_small"
+        android:paddingStart="@dimen/margin_item"
+        android:paddingEnd="@dimen/second_navigation_size">
+
+        <TextView
+            android:id="@+id/family_room_all_device_title"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="全部设备"
+            android:textSize="@dimen/text_large_size"
+            android:textColor="@color/color_333333"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/family_room_device_total"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/margin_large_plus_size"
+            android:gravity="center"
+            android:background="@null"
+            android:text="21设备"
+            android:textColor="@color/color_9E9E9E"
+            android:textSize="@dimen/text_normal_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/family_room_add_device_icon"
+            />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/family_room_add_device_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="@dimen/margin_small_size"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/family_room_family_cut"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="所有房间"
+        android:paddingStart="@dimen/margin_item"
+        android:background="@color/base_bg_gray"
+        android:textSize="@dimen/text_normal_size"
+        android:textColor="@color/text_gray_9e_color"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/family_room_all_device" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/family_room_all_room_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/family_room_add_linear"
+        app:layout_constraintTop_toBottomOf="@+id/family_room_family_cut"/>
+
+    <RelativeLayout
+        android:id="@+id/family_room_add_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/family_room_all_room_rv" >
+
+        <RelativeLayout
+            android:id="@+id/family_room_add_relate"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="@dimen/height_item_single_line">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_EBEBEB"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/more1"/>
+
+                <TextView
+                    android:id="@+id/family_room_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="@dimen/padding_text_normal_size"
+                    android:gravity="center"
+                    android:text="新建房间"
+                    android:textColor="@color/yellow"
+                    android:textSize="@dimen/textSize_alert_button"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/family_room_save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_base_btn"
+            android:layout_marginLeft="@dimen/margin_top_right"
+            android:layout_marginRight="@dimen/margin_top_right"
+            android:layout_marginBottom="@dimen/margin_item"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="保存"
+            android:background="@drawable/bg_bottom_btn"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/item_line_up"
+            android:layout_width="1dp"
+            android:layout_height="22dp"
+            android:background="@color/color_E4E6EB" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/blue_uncheck" />
+
+        <View
+            android:id="@+id/item_line_down"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/color_E4E6EB" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_line_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:minHeight="20dp"
+                android:text="22:16"
+                android:textColor="@color/color_device_all"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/item_line_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="20dp"
+                android:text="门已关闭"
+                android:textColor="@color/yellow"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/item_line_divide"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_D5D5D5" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

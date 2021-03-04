@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_item_two_line"
+    android:paddingStart="@dimen/margin_item"
+    android:background="@color/white"
+    android:id="@+id/item_sub_user_manage">
+
+    <ImageView
+        android:id="@+id/item_sub_user_delete_iv"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_base_size"
+        android:src="@drawable/delete_room_ico"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/item_sub_user_delete_iv"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_sub_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="兰州大学"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_large_size" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/item_sub_user_createtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_A5A5A5"
+        android:textSize="@dimen/text_small_size"
+        android:gravity="top"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/margin_large_plus_size"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用中"
+        android:textColor="@color/color_598DF3"/>
+
+    <View
+        android:id="@+id/item_sub_user_divline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_D5D5D5"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

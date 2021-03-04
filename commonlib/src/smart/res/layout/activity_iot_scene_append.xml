@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/base_bg_gray" >
+
+    <include layout="@layout/top_layout"/>
+
+    <View
+        android:id="@+id/top_margin_view"
+        android:layout_width="match_parent"
+        android:background="@color/base_bg_gray"
+        android:layout_height="@dimen/margin_actionsheet_left_right" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="场景名称"
+            android:layout_marginLeft="22dp"
+            android:layout_gravity="center"
+            android:textColor="@color/color_device_all"
+            android:textSize="@dimen/text_large_size"/>
+        <com.xhwl.commonlib.uiutils.ClearEditText
+            android:id="@+id/scene_append_name"
+            android:layout_width="0dp"
+            android:layout_weight="1.8"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入场景名称"
+            android:textSize="@dimen/text_normal_size"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:textColor="@color/color_3E3E3E"
+            android:layout_marginEnd="22dp"
+            android:layout_gravity="center"
+            android:gravity="end|center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="当手动点击"
+        android:paddingLeft="22dp"
+        android:textColor="@color/color_9E9E9E"
+        android:background="@color/color_F9F9F9"
+        android:textSize="@dimen/text_normal_size"
+        android:gravity="center_vertical"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="场景图标"
+            android:layout_marginLeft="22dp"
+            android:layout_gravity="center"
+            android:textColor="@color/color_device_all"
+            android:textSize="@dimen/text_large_size"/>
+        <LinearLayout
+            android:id="@+id/scene_append_icon_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <com.xhwl.commonlib.uiutils.CircleImageView
+                android:id="@+id/scene_append_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_iot_scene_go_home"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="22dp"
+                android:layout_gravity="center"
+                android:src="@drawable/right"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="就执行"
+        android:paddingLeft="22dp"
+        android:background="@color/base_bg_gray"
+        android:textSize="@dimen/text_normal_size"
+        android:textColor="@color/text_gray_9e_color"
+        android:gravity="center_vertical"/>-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/scene_append_cut_linear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/base_bg_gray"
+        app:layout_constraintTop_toBottomOf="@+id/scene_update_icon_layout">
+
+        <TextView
+            android:id="@+id/scene_append_icon_cut"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="就执行"
+            android:paddingStart="@dimen/margin_item"
+            android:background="@color/base_bg_gray"
+            android:textSize="@dimen/text_normal_size"
+            android:textColor="@color/text_gray_9e_color"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/scene_append_device_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="添加设备"
+            android:paddingStart="@dimen/margin_item"
+            android:paddingEnd="@dimen/margin_item"
+            android:textSize="@dimen/text_normal_size"
+            android:textColor="@color/yellow"
+            android:gravity="center_vertical"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/scene_add_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_single_line"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/margin_item"
+        android:text="添加设备"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/text_large_size" />
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/room_append_device_rv"
+        android:layout_marginStart="@dimen/margin_back_left"
+        android:layout_marginEnd="@dimen/margin_back_left"
+
+        />
+</LinearLayout>

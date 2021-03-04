@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_item_two_line"
+    android:paddingStart="@dimen/margin_item"
+    android:background="@color/white"
+    android:id="@+id/item_family_manage">
+
+    <ImageView
+        android:id="@+id/item_family_delete_iv"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_base_size"
+        android:src="@drawable/delete_room_ico"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/item_family_delete_iv"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/item_family_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="兰州大学"
+            android:textSize="@dimen/text_large_size"
+            android:textColor="@color/color_333333"
+            android:gravity="bottom" />
+
+        <TextView
+            android:id="@+id/item_family_info"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/color_A5A5A5"
+            android:textSize="@dimen/text_small_size"
+            android:gravity="top" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right"
+        android:layout_alignParentEnd="true"
+        android:paddingEnd="@dimen/second_navigation_size"
+        android:layout_centerVertical="true"/>
+    <View
+        android:id="@+id/item_room_divline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_D5D5D5"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

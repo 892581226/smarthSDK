@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.smarthome.iot.AddDeviceFailureActivity"
+    android:background="#f3f3f3">
+
+
+    <include
+        android:id="@+id/device_add_failure_top"
+        layout="@layout/top_layout" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/device_add_failure_top"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/device_add_failure_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp"
+                android:src="@drawable/icon_general_big"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/device_add_failure_top"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/device_add_failure_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加失败"
+                android:textColor="@color/color_3E3E3E"
+                android:textSize="@dimen/second_navigation_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/device_add_failure_img" />
+
+
+            <TextView
+                android:id="@+id/device_add_failure_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="53dp"
+                android:layout_marginTop="42dp"
+                android:text="请检查："
+                android:textColor="@color/color_3E3E3E"
+                android:textSize="@dimen/second_navigation_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/device_add_failure_text" />
+
+            <TextView
+                android:id="@+id/device_add_failure_info_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="54dp"
+                android:text="1、请确保WIFI密码正确 \n      （ 如果输错密码，请重置设备后重新添加 ）
+        \n\n2、如果WIFI信号太差 \n      （ 请先将设备、手机、路由器互相靠近后，尝试 重置设备后重新添加 ）
+        \n\n3、请确保已关闭路由器的白名单 \n     （ MAC地址访问限制防蹭网功能后在尝试 ）"
+                android:textColor="@color/color_9E9E9E"
+                android:textSize="@dimen/text_normal_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/device_add_failure_info" />
+
+            <TextView
+                android:id="@+id/device_add_failure_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp"
+                android:text="取消"
+                android:textColor="@color/base_blue"
+                android:textSize="@dimen/text_large_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/device_add_failure_info_text" />
+
+            <Button
+                android:id="@+id/device_add_failure_restart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_base_btn"
+                android:layout_marginStart="@dimen/margin_top_right"
+                android:layout_marginTop="@dimen/marginBottom_actionsheet_msg"
+                android:layout_marginEnd="@dimen/margin_top_right"
+                android:background="@drawable/bg_bottom_btn"
+                android:text="重新添加"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/device_add_failure_cancel" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

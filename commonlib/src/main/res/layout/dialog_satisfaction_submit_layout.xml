@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="270dp"
+        android:layout_height="248dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/table_btn_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <ImageView
+            android:id="@+id/dialog_submit_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:src="@drawable/icon_close"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dialog_message_1"
+            android:layout_width="142dp"
+            android:layout_height="@dimen/drop_pop_menu_item_height"
+            android:layout_marginTop="@dimen/margin_item"
+            android:text="服务态度好"
+            android:gravity="center"
+            android:textColor="@color/base_blue"
+            android:background="@drawable/dialog_select_blue"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_submit_close"
+            app:layout_constraintBottom_toTopOf="@+id/dialog_message_2"/>
+
+        <TextView
+            android:id="@+id/dialog_message_2"
+            android:layout_width="142dp"
+            android:layout_height="@dimen/drop_pop_menu_item_height"
+            android:text="服务态度好"
+            android:gravity="center"
+            android:textColor="@color/base_blue"
+            android:background="@drawable/dialog_select_blue"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_message_1"
+            app:layout_constraintBottom_toTopOf="@+id/dialog_message_3"/>
+
+        <TextView
+            android:id="@+id/dialog_message_3"
+            android:layout_width="142dp"
+            android:layout_height="@dimen/drop_pop_menu_item_height"
+            android:text="服务态度好"
+            android:gravity="center"
+            android:textColor="@color/base_blue"
+            android:background="@drawable/dialog_select_blue"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_message_2"
+            app:layout_constraintBottom_toTopOf="@+id/dialog_message_submit" />
+
+        <TextView
+            android:id="@+id/dialog_message_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_base_btn"
+            android:text="匿名提交"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_bottom_radius_btn"
+            android:gravity="center"
+            android:textSize="@dimen/text_large_size"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/dialog_satisfaction_submit_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_super_praise_big"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/family_manage_top_layout"
+        layout="@layout/top_layout"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_cut_off"
+        android:id="@+id/family_manage_height_cut"
+        android:background="@color/color_F9F9F9"
+        app:layout_constraintTop_toBottomOf="@+id/family_manage_top_layout"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/family_manage_name_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_single_line"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintTop_toBottomOf="@+id/family_manage_height_cut"
+        android:paddingStart="@dimen/margin_item"
+        android:paddingEnd="@dimen/margin_item">
+
+        <TextView
+            android:id="@+id/family_manage_name_title"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="家庭名称"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_large_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <com.xhwl.commonlib.uiutils.ClearEditText
+            android:id="@+id/family_manage_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center|end"
+            android:text=""
+            android:hint="请输入房间名称"
+            android:textColor="@color/color_3E3E3E"
+            android:textSize="@dimen/text_normal_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/family_cut_small"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/margin_item"
+        android:text="添加家庭图标"
+        android:textColor="@color/text_gray_9e_color"
+        android:textSize="@dimen/text_normal_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/family_manage_name_info" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/family_manage_icon_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_single_line"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/family_cut_small"
+        android:paddingStart="@dimen/margin_item"
+        android:paddingEnd="@dimen/margin_item">
+
+        <TextView
+            android:id="@+id/family_manage_icon_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="家庭图标"
+            android:textSize="@dimen/text_large_size"
+            android:textColor="@color/color_333333"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.xhwl.commonlib.uiutils.CircleImageView
+            android:id="@+id/family_manage_room_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_iot_room_master"
+            android:textSize="@dimen/text_normal_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/family_manage_add_device_icon"
+            />
+
+        <ImageView
+            android:id="@+id/family_manage_add_device_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="@dimen/margin_small_size"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/family_manage_save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_base_btn"
+        android:layout_marginLeft="@dimen/margin_top_right"
+        android:layout_marginRight="@dimen/margin_top_right"
+        android:layout_marginBottom="@dimen/margin_item"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="保存"
+        android:background="@drawable/bg_bottom_btn"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

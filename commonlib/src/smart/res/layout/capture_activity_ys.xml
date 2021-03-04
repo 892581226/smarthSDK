@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flt_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+       <!-- <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-70dp"
+            android:layout_gravity="center_horizontal" />
+
+        <com.example.smarthome.iot.yscamera.ViewfinderView
+            android:id="@+id/viewfinder_view1111"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="-70dp"
+            android:background="@color/transparent" />-->
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/ez_scan_cue_txt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_base_size"
+            android:visibility="gone"/>
+
+        <CheckBox
+            android:id="@+id/ckbLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/flashlight_selector"
+            android:button="@null"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/input_manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="手动输入序列号"
+            android:textColor="@color/color_598DF3"
+            android:textSize="@dimen/margin_base_size" />
+
+        <TextView
+            android:id="@+id/scan_add_tips"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="请扫描设备机身或说明书上二维码进行添加"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_normal_size" />
+    </FrameLayout>
+
+    <!--<com.videogo.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+    <include
+        android:id="@+id/capture_top_title_bar"
+        layout="@layout/top_layout"/>
+
+</FrameLayout>

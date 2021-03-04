@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".iot.impl.device.GateDeviceActivity">
+
+    <include
+        android:id="@+id/single_bit_switch_top"
+        layout="@layout/top_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_gateway_device_actrv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/tv_add_device">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/gateway_device_actrv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tv_add_device"
+            app:layout_constraintTop_toBottomOf="@+id/ll_gateway_device_actrv"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_to_add_device_icon"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

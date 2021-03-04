@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/default_scene_top_layout"
+        layout="@layout/top_layout_new" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/default_scene_tv"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/color_F9F9F9"
+                android:paddingStart="@dimen/margin_item"
+                android:text="默认场景"
+                android:textColor="@color/text_gray_9e_color"
+                android:textSize="@dimen/text_normal_size"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@+id/title_lay" />
+            <LinearLayout
+                android:id="@+id/scene_default_manage_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/scene_default_manage_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/my_scene_tv"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/color_F9F9F9"
+                android:gravity="center|left"
+                android:paddingStart="@dimen/margin_item"
+                android:text="@string/my_scene"
+                android:textColor="@color/text_gray_9e_color"
+                android:textSize="@dimen/text_normal_size"
+                app:layout_constraintTop_toBottomOf="@+id/scene_default_manage_linear" />
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/scene_manage_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/scene_manage_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_EBEBEB" />
+
+    <LinearLayout
+        android:id="@+id/scene_add_tv_linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_single_line"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/more1" />
+
+        <TextView
+            android:id="@+id/scene_add_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/padding_text_normal_size"
+            android:gravity="center"
+            android:text="新建场景"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/textSize_alert_button" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_normal_size">14sp</dimen>  &lt;!&ndash;用于正文 &ndash;&gt;
+    <dimen name="text_large_size">16sp</dimen>  &lt;!&ndash;用于二级标题、二级正文 &ndash;&gt;
+    <dimen name="text_small_size">12sp</dimen>   &lt;!&ndash;用于说明文字 &ndash;&gt;
+    <dimen name="margin_small_size">10dp</dimen>
+
+    <dimen name="margin_text_normal_size">6dp</dimen>
+    <dimen name="margin_normal_size">12dp</dimen>
+    <dimen name="title_textsize">18sp</dimen>
+
+    <dimen name="padding_text_normal_size">5dp</dimen>
+    <dimen name="margin_base_size">16dp</dimen> &lt;!&ndash;普通size&ndash;&gt;
+    <dimen name="height_actionsheet_title">40dp</dimen>
+    <dimen name="margin_larger_size">18dp</dimen> &lt;!&ndash; 大一点&ndash;&gt;
+    <dimen name="margin_base_btn">35dp</dimen>  &lt;!&ndash;用于登录按钮边距 &ndash;&gt;
+    <dimen name="margin_tiny_size">8dp</dimen> &lt;!&ndash;List 中item的小边距&ndash;&gt;
+    <dimen name="height_item_two_line">64dp</dimen>    &lt;!&ndash;用于双行字体item的行高 &ndash;&gt;
+    <dimen name="base_margin_size">15dp</dimen>
+    &lt;!&ndash;按钮的高度&ndash;&gt;
+    <dimen name="height_alert_button">48dp</dimen>
+    <dimen name="margin_back_left">16dp</dimen>  &lt;!&ndash;用于顶部返回按钮距左距离 &ndash;&gt;
+    <dimen name="margin_text_normal_small_size">2dp</dimen>
+    <dimen name="second_navigation_size">18sp</dimen> &lt;!&ndash;用于二级导航 &ndash;&gt;
+    <dimen name="height_base_btn">46dp</dimen>  &lt;!&ndash;用于通用按钮高度 &ndash;&gt;
+    <dimen name="margin_top_right">20dp</dimen>   &lt;!&ndash;用于顶部详情按钮距右距离 &ndash;&gt;
+    <dimen name="height_cut_off">10dp</dimen>    &lt;!&ndash;用于模块之间的行高 &ndash;&gt;
+    <dimen name="height_item_single_line">56dp</dimen>   &lt;!&ndash;用于单行字体item的行高 &ndash;&gt;
+    <dimen name="base_padding_size">15dp</dimen>
+    <dimen name="margin_large_size">20dp</dimen>
+    <dimen name="margin_large_plus_size">30dp</dimen>
+
+    <dimen name="padding_small_size">10dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="text_large_plus_size">24sp</dimen>
+
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="device_set_text_size">15sp</dimen>
+    <dimen name="dp_18">18dp</dimen>-->
+</resources>

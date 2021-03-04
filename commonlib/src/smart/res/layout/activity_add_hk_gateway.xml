@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/application_bg"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/gateway_net_setting"
+        layout="@layout/top_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/inputLinearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gateway_net_setting"
+        android:layout_marginTop="35dp"
+        android:visibility="visible"
+        >
+        <!--
+                <ImageButton
+                    android:id="@+id/searchBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/search_button_selector"
+                    android:onClick="onClick"
+                    android:paddingLeft="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/search" />
+         -->
+        <RelativeLayout
+            android:id="@+id/searchEditTextContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            >
+
+            <EditText
+                android:id="@+id/seriesNumberEt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/ez_serial_add_hint"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/gray_text"
+                android:textColorHint="@color/gray"
+                android:textSize="16dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/verifycodeEditTextContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/searchEditTextContainer"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            >
+
+            <EditText
+                android:id="@+id/verifycodeEt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/input_device_verify_code"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/gray_text"
+                android:textColorHint="@color/gray"
+                android:textSize="16dp"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/verifycodeEditTextContainer"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_bottom_btn"
+            android:scaleType="fitCenter"
+            android:text="@string/next_button_txt"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search"
+            android:background="@color/common_bg"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/probe_not_support_tip"
+            android:textColor="@color/setting_hint_text"
+            android:textSize="16dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

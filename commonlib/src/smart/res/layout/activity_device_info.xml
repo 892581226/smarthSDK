@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.smarthome.iot.DeviceInfoActivity">
+
+    <include
+        android:id="@+id/device_info_top"
+        layout="@layout/top_layout" />
+
+    <LinearLayout
+        android:id="@+id/device_info_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_single_line"
+        android:layout_marginTop="@dimen/padding_small_size"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/device_info_top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_item"
+            android:text="设备名称"
+            android:textColor="@color/color_3E3E3E"
+            android:textSize="@dimen/text_large_size" />
+
+        <com.xhwl.commonlib.uiutils.ClearEditText
+            android:id="@+id/device_info_device_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="24dp"
+            android:background="@null"
+            android:gravity="end|center_vertical"
+            android:hint="我的家"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:textColor="@color/color_3E3E3E"
+            android:textSize="@dimen/text_normal_size" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/margin_item"
+        android:background="@color/color_D5D5D5"
+        app:layout_constraintBottom_toTopOf="@+id/device_info_address_layout"
+        app:layout_constraintTop_toBottomOf="@+id/device_info_name_layout" />
+
+    <LinearLayout
+        android:id="@+id/device_info_address_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_single_line"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/device_info_name_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_item"
+            android:text="设备位置"
+            android:textColor="@color/color_3E3E3E"
+            android:textSize="@dimen/text_large_size" />
+
+        <TextView
+            android:id="@+id/device_info_address_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="客厅"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/text_large_size" />
+
+        <ImageView
+            android:id="@+id/device_info_address_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/icon_blue_top" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/padding_small_size"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        app:layout_constraintBottom_toTopOf="@+id/device_address_save_btn"
+        app:layout_constraintTop_toBottomOf="@+id/device_info_address_layout">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/device_settings_room_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_btn_bg"
+            android:overScrollMode="never"
+            android:paddingStart="@dimen/padding_small_size"
+            android:paddingBottom="@dimen/padding_small_size"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/device_address_save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_base_btn"
+        android:layout_marginStart="@dimen/margin_top_right"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/margin_top_right"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="@drawable/bg_bottom_btn"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/second_navigation_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

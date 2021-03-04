@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".iot.ShareFamilyActivity" >
+
+    <include
+        android:id="@+id/share_phone_top_layout"
+        layout="@layout/top_layout"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_cut_off"
+        android:id="@+id/share_phone_height_cut"
+        android:background="@color/color_F9F9F9"
+        app:layout_constraintTop_toBottomOf="@+id/share_phone_top_layout"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/share_linear"
+        app:layout_constraintTop_toBottomOf="@+id/share_phone_height_cut">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="手机号为APP注册时输入的手机号，如未注册,"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="请先下载APP注册"/>
+
+
+    </LinearLayout>
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/share_phone_edt_cl"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/height_item_single_line"
+        app:layout_constraintTop_toBottomOf="@+id/share_linear"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingStart="@dimen/margin_item"
+        android:paddingEnd="@dimen/margin_item">
+
+        <com.xhwl.commonlib.uiutils.ClearEditText
+            android:id="@+id/share_phone_cedt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text=""
+            android:textColor="@color/color_3E3E3E"
+            android:hint="请输入已注册手机号"
+            android:textColorHint="@color/color_9E9E9E"
+            android:paddingStart="@dimen/margin_item"
+            android:textSize="@dimen/text_normal_size"
+            android:maxLines="1"
+            android:inputType="number"
+            android:gravity="center|start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/share_phone_search_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/share_phone_edt_cl"
+        android:layout_marginTop="33dp"
+        >
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/share_phone_search_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_base_btn"
+            android:layout_marginLeft="@dimen/margin_top_right"
+            android:layout_marginRight="@dimen/margin_top_right"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="搜索"
+            android:background="@drawable/bg_bottom_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/share_phone_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/share_phone_edt_cl"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+        <ImageView
+            android:id="@+id/share_phone_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_20"
+            android:src="@drawable/icon_iot_unselected" />
+        <TextView
+            android:id="@+id/share_phone_result_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_large_size"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_toRightOf="@+id/share_phone_select"
+            android:text=""
+            android:gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="可分享"
+            android:textSize="@dimen/text_large_size"
+            android:textColor="@color/color_598DF3"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_30"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/share_phone_share_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/share_phone_search_result"
+        android:layout_marginTop="96dp"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/share_phone_share_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_base_btn"
+            android:layout_marginLeft="@dimen/margin_top_right"
+            android:layout_marginRight="@dimen/margin_top_right"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="分享"
+            android:gravity="center"
+            android:background="@drawable/bg_bottom_btn" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

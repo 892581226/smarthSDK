@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".iot.ShareFamilyActivity" >
+
+    <include
+        android:id="@+id/share_family_top_layout"
+        layout="@layout/top_layout"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_cut_off"
+        android:id="@+id/share_family_height_cut"
+        android:background="@color/color_F9F9F9"
+        app:layout_constraintTop_toBottomOf="@+id/share_family_top_layout"/>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout_show_account"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintTop_toBottomOf="@+id/share_family_height_cut"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主账号"
+                android:textSize="16dp"
+                android:textColor="@color/color_333333"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/tv_userAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="14dp"
+                android:textColor="@color/color_333333"/>
+
+            <TextView
+                android:id="@+id/tv_show_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="显示密码"
+                android:textColor="@color/color_598DF3"/>
+
+        </RelativeLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/share_family_title_cl"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/height_item_single_line"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_show_account"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingStart="@dimen/margin_item"
+        android:paddingEnd="@dimen/margin_item">
+
+        <TextView
+            android:id="@+id/share_family_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="通过APP权限共享"
+            android:textSize="@dimen/text_large_size"
+            android:textColor="@color/color_333333"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/share_family_title_tv"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/share_family_family_cut"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="共享成员"
+        android:paddingStart="@dimen/margin_item"
+        android:background="@color/base_bg_gray"
+        android:textSize="@dimen/text_normal_size"
+        android:textColor="@color/text_gray_9e_color"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/share_family_title_cl" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/share_family_all_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/share_family_add_linear"
+        app:layout_constraintTop_toBottomOf="@+id/share_family_family_cut"/>
+
+    <RelativeLayout
+        android:id="@+id/share_family_add_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/share_family_all_rv" >
+
+        <RelativeLayout
+            android:id="@+id/share_family_add_relate"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="@dimen/height_item_single_line">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_EBEBEB"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/more1"/>
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/family_room_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="@dimen/padding_text_normal_size"
+                    android:gravity="center"
+                    android:text="新建房间"
+                    android:textColor="@color/color_598DF3"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize_alert_button" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/share_family_save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_base_btn"
+            android:layout_marginLeft="@dimen/margin_top_right"
+            android:layout_marginRight="@dimen/margin_top_right"
+            android:layout_marginBottom="@dimen/margin_item"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="完成"
+            android:background="@drawable/bg_bottom_btn"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

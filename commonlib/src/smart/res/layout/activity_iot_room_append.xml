@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/room_append_top_layout"
+        layout="@layout/top_layout"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_cut_off"
+        android:id="@+id/room_append_height_cut"
+        android:background="@color/color_F9F9F9"
+        app:layout_constraintTop_toBottomOf="@+id/room_append_top_layout"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/room_name_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_single_line"
+        app:layout_constraintTop_toBottomOf="@+id/room_append_height_cut"
+        android:background="@color/white"
+        android:paddingStart="@dimen/margin_item"
+        android:paddingEnd="@dimen/margin_item">
+
+        <TextView
+            android:id="@+id/room_name_title"
+            android:layout_width="100dp"
+            android:layout_height="19dp"
+            android:gravity="center_vertical"
+            android:text="房间名称"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_large_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <com.xhwl.commonlib.uiutils.ClearEditText
+            android:id="@+id/room_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入房间名字"
+            android:textColor="@color/color_3E3E3E"
+            android:textSize="@dimen/text_normal_size"
+            android:gravity="center|end"
+            android:maxLines="1"
+            android:maxLength="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/room_cut_small"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/margin_item"
+        android:text="添加房间图标"
+        android:textColor="@color/text_gray_9e_color"
+        android:textSize="@dimen/text_normal_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/room_name_info" />
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/room_icon_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_single_line"
+        app:layout_constraintTop_toBottomOf="@+id/room_cut_small"
+        android:background="@color/white"
+        android:paddingStart="@dimen/margin_item"
+        android:paddingEnd="@dimen/margin_item">
+
+        <TextView
+            android:id="@+id/room_icon_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="房间图标"
+            android:textSize="@dimen/text_large_size"
+            android:textColor="@color/color_333333"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.xhwl.commonlib.uiutils.CircleImageView
+            android:id="@+id/room_append_device_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_iot_room_master"
+            android:textSize="@dimen/text_normal_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/room_add_room_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/room_add_room_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="@dimen/margin_small_size"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/room_cut_linear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/base_bg_gray"
+        app:layout_constraintTop_toBottomOf="@+id/room_icon_layout">
+        <TextView
+            android:id="@+id/room_cut"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="选择设备"
+            android:paddingStart="@dimen/margin_item"
+            android:textSize="@dimen/text_normal_size"
+            android:textColor="@color/text_gray_9e_color"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/room_device_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="管理设备"
+            android:paddingStart="@dimen/margin_item"
+            android:paddingEnd="@dimen/margin_item"
+            android:textSize="@dimen/text_normal_size"
+            android:textColor="@color/base_blue"
+            android:gravity="center_vertical"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/room_append_device_text"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/margin_item"
+        android:paddingEnd="@dimen/margin_back_left"
+        android:text="添加设备"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/text_large_size"
+        app:layout_constraintTop_toBottomOf="@id/room_cut_linear" />
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/room_append_device_rv"
+        android:layout_marginStart="@dimen/margin_back_left"
+        android:layout_marginEnd="@dimen/margin_back_left"
+        app:layout_constraintTop_toBottomOf="@id/room_append_device_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</android.support.constraint.ConstraintLayout>

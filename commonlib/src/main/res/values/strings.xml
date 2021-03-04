@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="dialog_super_praise_message1">态度超好</string>
+    <string name="dialog_super_praise_message2">处理超快</string>
+    <string name="dialog_super_praise_message3">完美解决问题</string>
+
+    <string name="dialog_praise_message1">态度不错</string>
+    <string name="dialog_praise_message2">处理较快</string>
+    <string name="dialog_praise_message3">问题解决较好</string>
+
+    <string name="dialog_general_message1">态度一般</string>
+    <string name="dialog_general_message2">处理速度一般</string>
+    <string name="dialog_general_message3">问题基本解决</string>
+
+    <string name="dialog_bad_message1">态度较差</string>
+    <string name="dialog_bad_message2">处理较慢</string>
+    <string name="dialog_bad_message3">问题未完全解决</string>
+
+    <string name="dialog_very_bad_message1">态度非常差</string>
+    <string name="dialog_very_bad_message2">处理严重延期</string>
+    <string name="dialog_very_bad_message3">问题没有解决</string>
+
+    <string name="http_error_msg">网络错误</string>
+    <string name="http_request_error">请求参数错误</string>
+    <string name="json_parse_error">JSON解析错误</string>
+    <string name="volume">音量</string>
+    <string name="add_cateye_hand">手动写入</string>
+
+
+</resources>

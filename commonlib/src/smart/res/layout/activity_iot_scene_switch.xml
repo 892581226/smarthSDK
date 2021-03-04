@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/scene_update_top_layout"
+        layout="@layout/top_layout"/>
+
+    <View
+        android:id="@+id/scene_update_top_margin_view"
+        android:layout_width="match_parent"
+        android:background="@color/base_bg_gray"
+        android:layout_height="@dimen/margin_actionsheet_left_right"
+        app:layout_constraintTop_toBottomOf="@+id/scene_update_top_layout"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/scene_switch_device_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="@dimen/margin_small_size"
+        android:layout_marginEnd="@dimen/margin_small_size"
+        app:layout_constraintBottom_toTopOf="@+id/scene_switch_save_btn"
+        app:layout_constraintTop_toBottomOf="@id/scene_update_top_margin_view"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/scene_switch_save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_base_btn"
+        android:layout_marginLeft="@dimen/margin_top_right"
+        android:layout_marginRight="@dimen/margin_top_right"
+        android:layout_marginBottom="@dimen/margin_item"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="保存"
+        android:background="@drawable/bg_bottom_btn"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

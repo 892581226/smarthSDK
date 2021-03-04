@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">smartHome</string>
+    <string name="get_up">起床模式</string>
+    <string name="scene_dev_num">%1$d个设备/%2$d个在线</string>
+    <string name="room_dev_num">%1$s个设备/%2$s个在线</string>
+    <string name="my_scene">我的场景</string>
+
+    <string name="step_1">第一步</string>
+    <string name="step_2">第二步</string>
+    <string name="msg_camera_framework_bug">相机被占用或没有相机权限，请检查</string>
+    <string name="button_ok">退出</string>
+    <string name="scan_code">扫一扫</string>
+    <string name="open_flash">打开闪光灯</string>
+    <string name="close_flash">关闭闪光灯</string>
+    <string name="gallery">相册</string>
+    <string name="scan_failed_tip">图片解析失败，换个图片试试.</string>
+
+
+    <string name="ez_scan_cue_txt">设备二维码</string>
+    <string name="query_camera_fail_network_exception">查询失败，网络不给力</string>
+    <string name="realplay_encrypt_password_error_message">
+        您的视频已加密，请输入密码进行查看，初始密码为机身标签上的验证码，如果没有验证码，请输入ABCDEF（密码区分大小写）
+    </string>
+    <string name="input_device_verify_code">请输入设备验证码</string>
+
+    <string name="user_online">用户在线</string>
+    <string name="user_offline">用户离线</string>
+
+    <string name="add_dev_statement">添加设备</string>
+    <string name="dev_condition">设备状态</string>
+    <string name="switch_1">键位一</string>
+    <string name="switch_2">键位二</string>
+    <string name="socket_switch">关联开关按键</string>
+    <string name="unbind">解绑</string>
+    <string name="switch_custom">未关联</string>
+    <string name="dev_secucces">检查正常</string>
+    <string name="dev_wrong">检查正常</string>
+    <string name="video_capture">抓拍</string>
+    <string name="video_change_sound">变声</string>
+    <string name="video_voi_reply">语音回复</string>
+    <string name="video_hang_up">挂断</string>
+    <string name="video_mute">静音</string>
+    <string name="dev_camera">设备摄像头</string>
+    <string name="phone_camera">手机摄像头</string>
+    <string name="hk_cat">海康猫眼</string>
+    <string name="def_speak_hint">按住说话</string>
+    <string name="def_press_speak_hint">松开结束</string>
+    <string name="def_double_talk_hint">点击 对讲</string>
+    <string name="def_press_double_talk_hint">松开 关闭</string>
+    <string name="createfamily">创建业主家庭</string>
+    <string name="specified_device">指定设备</string>
+    <string name="configuring_wifi">正在配置wifi……</string>
+    <string name="ap_config_connecting_to_device">step1: 正在连接到设备</string>
+    <string name="ap_config_device_try_registering_ezviz_platform">step2: 设备尝试注册到萤石平台</string>
+    <string name="step3_adding_device_to_account">step3: 正在添加设备到账户</string>
+    <string name="try_again">重试</string>
+    <string name="config_wifi_succeed">配网成功！</string>
+    <string name="btn_ensure">确认</string>
+    <string name="download_success">下载成功！</string>
+    <string name="download_fail">下载失败！</string>
+    <string name="choose_config_wifi_way">选择配网方式</string>
+    <string name="config_wifi_page">wifi配置页</string>
+    <string name="failed_to_config_wifi">配网失败！</string>
+    <string name="config_wifi_for_another_device">配置下一个设备</string>
+    <string name="config_wifi_for_success_device">添加设备</string>
+    <string name="config_wifi_succeeded">配网成功！</string>
+    <string name="device_hotspot_name">设备热点名</string>
+    <string name="device_hotspot_password">设备热点密码：</string>
+    <string name="app_common_next_step">下一步</string>
+    <string name="app_common_hint_hotspot_name">如：EZVIZ_C12345678</string>
+    <string name="app_common_hint_hotspot_pwd">如：EZVIZ_ABCDEF</string>
+    <string name="app_common_deivce_hotspot_info_can_not_empty">设备热点名称和密码不能为空！</string>
+    <string name="app_common_stop_config_wifi_while_switched_to_background">配网界面关闭，配网已经停止</string>>
+    <string name="please_try_connect_device_hotspot_manually">自动AP配网失败，请到系统设置中手动连接设备热点，连接成功并返回后，demo将开始手动AP配网。</string>
+    <string name="go_to_connect_wifi">去连接wifi</string>
+    <string name="device_hotspot_ssid">设备热点SSID：</string>
+    <string name="device_hotspot_pwd">设备热点密码：</string>
+    <string name="ez_serial_add_hint">设备机身上的9位序列号</string>
+    <string name="next_button_txt">下一步</string>
+    <string name="probe_not_support_tip">不支持序列号添加探测器哦～</string>
+    <string name="device_unsupport_5g_wifi">如果你使用的是双频路由器，请不要让摄像机连接5G频段的Wi-Fi</string>
+    <string name="auto_wifi_net">网络</string>
+    <string name="auto_wifi_ssid">ssid</string>
+    <string name="login_password_tv_txt">密码</string>
+    <string name="tip_heard_voice">请将设备插上电后等待大约30秒，直到设备启动完成</string>
+    <string name="device_reset_ok">我已重启好</string>
+    <string name="string_ap_connection">AP配网</string>
+    <string name="string_smart_connection">SmartConfig配网</string>
+    <string name="string_sound_wave_connection">声波配网</string>
+    <string name="countdown">留言时长还剩%d秒</string>
+    <string name="auto_wifi_cer_config_title1">网络连接(1/2)</string>
+    <string name="auto_wifi_cer_config_title2">第二步，连接Wi-Fi</string>
+    <string name="auto_wifi_dialog_title_wifi_required">需要将手机连接到Wi-Fi</string>
+    <string name="auto_wifi_dialog_btn_wifi">连接Wi-Fi</string>
+    <string name="please_open_wifi_network">请到“设置”-“Wi-Fi”功能中开启Wi-Fi并连接到网络</string>
+    <string name="unknow_ssid">&lt;unknown ssid&gt;</string>
+    <string name="auto_wifi_step_one_title">第一步，准备好设备</string>
+    <string name="auto_wifi_step_two_title">第二步，连接Wi-Fi</string>
+    <string name="auto_wifi_step_three_title">第三步，添加设备</string>
+    <string name="autowifi_heard_voice">设备已启动好，且是第一次配置网络</string>
+    <string name="autowifi_not_heard_voice">这台设备以前配过网络</string>
+    <string name="device_reset_title">重启设备</string>
+    <string name="scan_search_probe_qrcode">探测器机身上的二维码</string>
+    <string name="scan_probe_qrcode_error">非探测器设备无法关联哦~</string>
+    <string name="unable_identify_two_dimensional_code_tip">无法识别二维码，你可以点击屏幕\n右上角的按钮手动输入</string>
+    <string name="serial_number_is_null">序列号不能为空</string>
+    <string name="serial_number_error">序列号错误</string>
+    <string name="open_camera_fail">打开相机失败，请选择手动输入添加设备</string>
+
+
+    <string name="device_reset_tip">长按设备上的reset键10秒后松开，并等待大约30秒直到设备启动完成</string>
+    <string name="start_ap_config">开始配网</string>
+    <string name="smart_Socket_86">86智能插座</string>
+    <string name="water_alarm">溢水报警</string>
+    <string name="socket_open">开启</string>
+    <string name="socket_colse">关闭</string>
+</resources>
