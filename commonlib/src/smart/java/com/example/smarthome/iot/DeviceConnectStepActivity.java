@@ -94,7 +94,7 @@ public class DeviceConnectStepActivity extends BaseActivity implements View.OnCl
 //        }
         devListBean = getIntent().getParcelableExtra("DeviceConnectStepActivity");
         LogUtils.e("DeviceConnectStepActivity", devListBean.getDeviceType() + devListBean.toString()+"------");
-        loadingDialog = new ZLoadingDialog(this);
+        /*loadingDialog = new ZLoadingDialog(this);
         loadingDialog.setLoadingBuilder(ROTATE_CIRCLE)//设置类型
                 .setLoadingColor(getResources().getColor(R.color.yellow))//颜色
                 .setHintText("Loading...")
@@ -103,7 +103,7 @@ public class DeviceConnectStepActivity extends BaseActivity implements View.OnCl
                 .setDialogBackgroundColor(getResources().getColor(R.color.transparent))
                 .setDurationTime(0.5) // 设置动画时间百分比 - 0.5倍
                 .setCanceledOnTouchOutside(false);
-        loadingDialog.show();
+        loadingDialog.show();*/
         getDevInfo(devListBean.getDevNo());
 
         mTopTitle.setText(devListBean.getDeviceName());
@@ -224,7 +224,7 @@ public class DeviceConnectStepActivity extends BaseActivity implements View.OnCl
 
                     @Override
                     public void onComplete() {
-                        loadingDialog.dismiss();
+                        //loadingDialog.dismiss();
                         LogUtils.e("onComplete", "============");
                     }
                 });

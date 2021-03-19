@@ -177,7 +177,7 @@ public class DeviceAppendActivity extends BaseActivity implements View.OnClickLi
                             bundle.putParcelable(DeviceAppendFragment.TAG, devList.get(mPosition));
                             bundle.putString(DeviceAppendFragment.ID,deviceInfoBean.getId());
                             appendFragment.setArguments(bundle);
-                            fragmentTransaction.commit();
+                            fragmentTransaction. commitAllowingStateLoss();
                             listAdapter.notifyDataSetChanged();
                             LogUtils.e("onNext:", "------------------");
                         }else {
