@@ -1,7 +1,7 @@
 package com.xhwl.commonlib.uiutils;
 
 import android.graphics.Paint;
-import android.support.design.widget.TabLayout;
+import com.google.android.material.tabs.TabLayout;
 import android.view.View;
 import android.widget.LinearLayout;
 

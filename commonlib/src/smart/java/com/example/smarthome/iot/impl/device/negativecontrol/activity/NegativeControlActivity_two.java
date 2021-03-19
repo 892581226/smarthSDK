@@ -2,8 +2,8 @@ package com.example.smarthome.iot.impl.device.negativecontrol.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.text.TextUtils;
+import androidx.annotation.Nullable;
+
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -16,7 +16,6 @@ import com.example.smarthome.R;
 import com.example.smarthome.iot.entry.CommonResp;
 import com.example.smarthome.iot.impl.device.infraredscreen.bean.DeviceBean;
 import com.example.smarthome.iot.net.Constant;
-import com.google.common.collect.Iterators;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.convert.StringConvert;
 import com.lzy.okgo.model.Response;
@@ -25,8 +24,6 @@ import com.xhwl.commonlib.base.BaseActivity;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;

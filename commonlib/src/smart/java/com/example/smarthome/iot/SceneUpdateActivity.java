@@ -1,21 +1,17 @@
 package com.example.smarthome.iot;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.os.Parcelable;
-import android.support.constraint.ConstraintLayout;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.text.InputFilter;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -27,7 +23,6 @@ import com.example.smarthome.R;
 import com.example.smarthome.iot.adapter.SceneDeviceAdapter;
 import com.example.smarthome.iot.entry.AddSceneVo;
 import com.example.smarthome.iot.entry.CommonResp;
-import com.example.smarthome.iot.entry.DeviceManageItemVo;
 import com.example.smarthome.iot.entry.SceneDetailVo;
 import com.example.smarthome.iot.entry.SmartInfoVo;
 import com.example.smarthome.iot.entry.eventbus.UpdateFamilyEvent;
@@ -47,7 +42,6 @@ import com.xhwl.commonlib.uiutils.SPUtils;
 import com.xhwl.commonlib.uiutils.StringUtils;
 import com.xhwl.commonlib.uiutils.ToastUtil;
 import com.xhwl.commonlib.uiutils.UiTools;
-import com.xhwl.commonlib.uiutils.dialog.AlertDialog;
 import com.xhwl.commonlib.uiutils.dialog.BaseDialog;
 
 import org.greenrobot.eventbus.EventBus;
@@ -64,9 +58,6 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
-import retrofit2.http.HEAD;
-
-import static com.zyao89.view.zloading.Z_TYPE.ROTATE_CIRCLE;
 
 /**
  * author: glq
@@ -495,7 +486,7 @@ public class SceneUpdateActivity extends BaseActivity implements View.OnClickLis
                 // if (deviceInfoBeans.size()>0){
                 for (int i = 0; i < deviceInfoBeans.size(); i++) {
                     for (int j = 0; j < i; j++) {
-                        if(deviceInfoBeans.get(i).getDeviceType().equals(deviceInfoBeans.get(j).getDeviceType())){
+                        if(deviceInfoBeans.get(i).getDeviceId().equals(deviceInfoBeans.get(j).getDeviceId())){
                             deviceInfoBeans.remove(i);
                             i=i-1;
                         }

@@ -12,7 +12,7 @@
         android:id="@+id/default_scene_top_layout"
         layout="@layout/top_layout_new" />
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -42,7 +42,7 @@
                 android:descendantFocusability="blocksDescendants"
                 android:orientation="vertical">
 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/scene_default_manage_rv"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -73,7 +73,7 @@
                 android:descendantFocusability="blocksDescendants"
                 android:orientation="vertical">
 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/scene_manage_rv"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -81,7 +81,7 @@
 
             </LinearLayout>
         </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
     <View
         android:layout_width="match_parent"

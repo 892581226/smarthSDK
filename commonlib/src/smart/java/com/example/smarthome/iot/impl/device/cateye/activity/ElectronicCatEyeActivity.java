@@ -6,7 +6,7 @@ import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -26,7 +26,6 @@ import com.eques.icvss.api.ICVSSListener;
 import com.eques.icvss.api.ICVSSUserInstance;
 import com.eques.icvss.core.module.user.BuddyType;
 import com.eques.icvss.utils.ELog;
-import com.eques.icvss.utils.Method;
 import com.eques.icvss.utils.ResultCode;
 import com.example.smarthome.R;
 import com.example.smarthome.iot.impl.device.cateye.entity.DevDetailsEntity;
@@ -50,13 +49,8 @@ import org.json.JSONObject;
 import java.lang.ref.WeakReference;
 import java.net.URL;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.concurrent.Executors;
-
-import okhttp3.Call;
-import okhttp3.MediaType;
 
 public class ElectronicCatEyeActivity extends BaseActivity implements ICVSSListener {
 

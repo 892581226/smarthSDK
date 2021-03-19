@@ -1,12 +1,11 @@
 package com.xhwl.commonlib.http.netrequest;
 
 import android.os.Build;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.util.Log;
 
 import com.example.smarthome.BuildConfig;
 import com.xhwl.commonlib.application.MyAPP;
-import com.xhwl.commonlib.constant.SpConstant;
 import com.xhwl.commonlib.http.Constant;
 import com.xhwl.commonlib.http.resp.ServerTip;
 import com.xhwl.commonlib.uiutils.LogUtils;

@@ -1,6 +1,6 @@
 package com.example.smarthome.iot.entry;
 
-import android.support.annotation.ColorRes;
+import androidx.annotation.ColorRes;
 
 import com.example.smarthome.R;
 

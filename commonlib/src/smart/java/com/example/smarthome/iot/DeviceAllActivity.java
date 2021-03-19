@@ -3,13 +3,13 @@ package com.example.smarthome.iot;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
+
 import com.alibaba.fastjson.JSONObject;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.example.smarthome.R;
@@ -146,28 +146,15 @@ public class DeviceAllActivity extends BaseActivity implements View.OnClickListe
         if (view.getId() == R.id.item_iot_device_linear) {
             Log.e("點擊添加",from);
 			if (!StringUtils.isEmpty(from) && !from.equalsIgnoreCase("SceneAppendActivity") && !from.equalsIgnoreCase("SceneUpdateActivity")) {
-                    if (StringUtils.isEmpty(allDevices.get(position).getRoomId())) {
-                        allDevices.get(position).setCheck(!allDevices.get(position).isCheck());
-                        operateAdapter.notifyDataSetChanged();
-                    }
-                }/*else if (from.equalsIgnoreCase("SceneUpdateActivity")){
+                if (StringUtils.isEmpty(allDevices.get(position).getRoomId())) {
                     allDevices.get(position).setCheck(!allDevices.get(position).isCheck());
                     operateAdapter.notifyDataSetChanged();
-			    } */else {
-                    if (!DeviceType.HILINK_SWITCH_1.equals(allDevices.get(position).getDeviceType()) ||
-                            !DeviceType.HILINK_SWITCH_2.equals(allDevices.get(position).getDeviceType()) ||
-                            !DeviceType.HILINK_SWITCH_3.equals(allDevices.get(position).getDeviceType()) ||
-                           ! DeviceType.HILINK_SWITCH_4.equals(allDevices.get(position).getDeviceType())||
-                    !DeviceType.HILINK_CURTAIN.equals(allDevices.get(position).getDeviceType())||
-                // 鸿雁开关控制
-                !DeviceType.HONGYAN_SWITCH_1.equals(allDevices.get(position).getDeviceType()) ||
-                        !DeviceType.HONGYAN_SWITCH_2.equals(allDevices.get(position).getDeviceType()) ||
-                        !DeviceType.HONGYAN_SWITCH_3.equals(allDevices.get(position).getDeviceType()) ||
-                        !DeviceType.HONGYAN_SWITCH_4.equals(allDevices.get(position).getDeviceType())) {
-                        allDevices.get(position).setCheck(!allDevices.get(position).isCheck());
-                        operateAdapter.notifyDataSetChanged();
-                    }
                 }
+			}
+			else {
+                allDevices.get(position).setCheck(!allDevices.get(position).isCheck());
+                operateAdapter.notifyDataSetChanged();
+			}
         }
     }
 }

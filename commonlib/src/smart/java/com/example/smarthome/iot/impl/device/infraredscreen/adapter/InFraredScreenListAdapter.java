@@ -1,14 +1,12 @@
 package com.example.smarthome.iot.impl.device.infraredscreen.adapter;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.example.smarthome.R;
-import com.example.smarthome.iot.impl.device.infraredscreen.bean.DeviceBean;
 
 public class InFraredScreenListAdapter extends BaseQuickAdapter<String, BaseViewHolder> {
 

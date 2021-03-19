@@ -11,7 +11,7 @@ import android.util.AttributeSet;
 /**
  * 解决文字排版混乱参差不齐的问题
  */
-public class JustifyTextView extends android.support.v7.widget.AppCompatTextView {
+public class JustifyTextView extends androidx.appcompat.widget.AppCompatTextView {
 
     private int mLineY;
     private int mViewWidth;

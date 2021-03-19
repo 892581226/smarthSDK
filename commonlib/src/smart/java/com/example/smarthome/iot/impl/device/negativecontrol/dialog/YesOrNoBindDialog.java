@@ -1,10 +1,9 @@
 package com.example.smarthome.iot.impl.device.negativecontrol.dialog;
 
-import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
@@ -18,9 +17,7 @@ import com.example.smarthome.iot.entry.CommonResp;
 import com.example.smarthome.iot.entry.DeviceInfoVo;
 import com.example.smarthome.iot.entry.SmartControlVo;
 import com.example.smarthome.iot.impl.device.infraredscreen.bean.DeviceBean;
-import com.example.smarthome.iot.impl.device.negativecontrol.activity.NegativeControlActivity_Three;
 import com.example.smarthome.iot.net.Constant;
-import com.example.smarthome.iot.util.DeviceControlUtil;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.convert.StringConvert;
 import com.lzy.okgo.model.Response;

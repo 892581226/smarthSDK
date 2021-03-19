@@ -33,17 +33,17 @@ def dependVersion = [
 ]
 
 def dependence = [
-        "supportV4"                  : "com.android.support:support-v4:${dependVersion["androidSupportSdkVersion"]}",
-        "supportV7"                  : "com.android.support:appcompat-v7:${dependVersion["androidSupportSdkVersion"]}",
-        "design"                     : "com.android.support:design:${dependVersion["androidSupportSdkVersion"]}",
-        "recyclerviewV7"             : "com.android.support:recyclerview-v7:${dependVersion["androidSupportSdkVersion"]}",
+        "supportV4"                  : 'androidx.legacy:legacy-support-v4:1.0.0',
+        "supportV7"                  : 'androidx.appcompat:appcompat:1.0.0',
+        "design"                     : 'com.google.android.material:material:1.0.0',
+        "recyclerviewV7"             : 'androidx.recyclerview:recyclerview:1.0.0',
         "butterknife_compiler"       : "com.jakewharton:butterknife-compiler:${dependVersion["butterknifeSdkVersion"]}",
         "butterknife"                : "com.jakewharton:butterknife:${dependVersion["butterknifeSdkVersion"]}",
-        "exifinterface"              : "com.android.support:exifinterface:${dependVersion["androidSupportSdkVersion"]}",
+        "exifinterface"              : 'androidx.exifinterface:exifinterface:1.0.0',
         rxeasyhttp                   : "com.zhouyou:rxeasyhttp:${dependVersion.rxeasyhttpVersion}",
         arouter_compiler             : "com.alibaba:arouter-compiler:$dependVersion.arouter_compiler",
         arouter_api                  : "com.alibaba:arouter-api:$dependVersion.arouter_api",
-        constraintLayout             : "com.android.support.constraint:constraint-layout:$dependVersion.constraintLayoutVersion",
+        constraintLayout             : 'androidx.constraintlayout:constraintlayout:1.1.3',
         dynamicpagerindicator        : "com.kcrason:dynamicpagerindicator:$dependVersion.dynamicpagerindicator",
         fastjson                     : "com.alibaba:fastjson:$dependVersion.fastjson",
         BaseRecyclerViewAdapterHelper: "com.github.CymChad:BaseRecyclerViewAdapterHelper:$dependVersion.BaseRecyclerViewAdapterHelper",

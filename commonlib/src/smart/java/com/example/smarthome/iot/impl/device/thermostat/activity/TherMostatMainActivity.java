@@ -2,9 +2,9 @@ package com.example.smarthome.iot.impl.device.thermostat.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -14,8 +14,6 @@ import android.widget.Toast;
 import com.alibaba.fastjson.JSON;
 import com.example.smarthome.R;
 import com.example.smarthome.iot.DeviceInfoActivity;
-import com.example.smarthome.iot.DeviceType;
-import com.example.smarthome.iot.RoomDevicePagerFragment;
 import com.example.smarthome.iot.entry.CommonResp;
 import com.example.smarthome.iot.entry.SmartInfoVo;
 import com.example.smarthome.iot.entry.eventbus.UpdateFamilyEvent;
@@ -30,7 +28,6 @@ import com.lzy.okgo.convert.StringConvert;
 import com.lzy.okgo.model.Response;
 import com.lzy.okrx2.adapter.ObservableResponse;
 import com.xhwl.commonlib.base.BaseActivity;
-import com.xhwl.commonlib.uiutils.ToastUtil;
 import com.xhwl.commonlib.uiutils.viewpager.NoScrollViewPager;
 
 import org.greenrobot.eventbus.EventBus;

@@ -5,14 +5,14 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.constraint.ConstraintLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -598,7 +598,6 @@ public class HomeSmartFragment extends BaseFrament implements View.OnClickListen
 
     }
 
-
     private void initView(View view) {
         if (getActivity() != null) {
             token = SPUtils.get(getActivity(), SpConstant.SP_USERTOKEN, "");
@@ -752,8 +751,7 @@ public class HomeSmartFragment extends BaseFrament implements View.OnClickListen
                                 ToastUtil.show("请在主家庭添加猫眼");
                             }
                         }
-                    }*/
-                    else if (position==4){//创建家庭
+                    }*/else if (position==4){//创建家庭
                         mPopupWindow1.showAtLocation(getView(),Gravity.CENTER,0,0);
 
                     }else if (position==5){ //移交家庭
@@ -1105,7 +1103,7 @@ public class HomeSmartFragment extends BaseFrament implements View.OnClickListen
         if (messageEvent.isUpdate()) {
             isUpdate = true;
             // 刷新家庭列表
-            changedSmart();
+            smartInitFamily(telephone,0);
         }
     }
 
@@ -1211,13 +1209,13 @@ public class HomeSmartFragment extends BaseFrament implements View.OnClickListen
             currentFamilyPosition = -1;
             isUpdate = true;
             // 刷新家庭列表
-            smartInitFamily(telephone,1);
+            smartInitFamily(telephone,0);
         }  else if(initCurrentFamily.equalsIgnoreCase("FamilyRoomActivity")){
             //萤石摄像头刷新
 //            currentFamilyPosition = -1;
 //            isUpdate = true;
 //            getYsCameraList();
-            smartInitFamily(telephone,1);
+            smartInitFamily(telephone,0);
         }else if (initCurrentFamily.equalsIgnoreCase("FamilyMoveActivity")){
             currentFamilyPosition = -1;
             isUpdate = true;

@@ -2,18 +2,15 @@ package com.example.smarthome.iot;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.os.Looper;
 import android.os.Parcelable;
-import android.support.constraint.ConstraintLayout;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.telecom.Call;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import com.alibaba.fastjson.JSON;
@@ -22,7 +19,6 @@ import com.example.smarthome.R;
 import com.example.smarthome.iot.adapter.DeviceViewAdapter;
 import com.example.smarthome.iot.entry.AddRoomVo;
 import com.example.smarthome.iot.entry.SmartInfoVo;
-import com.example.smarthome.iot.entry.YsAccessTokenResp;
 import com.example.smarthome.iot.entry.eventbus.UpdateFamilyEvent;
 import com.example.smarthome.iot.net.Constant;
 import com.lzy.okgo.OkGo;
@@ -43,7 +39,6 @@ import com.zyao89.view.zloading.ZLoadingDialog;
 
 import org.greenrobot.eventbus.EventBus;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,7 +46,6 @@ import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
-import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
 
 import static com.zyao89.view.zloading.Z_TYPE.ROTATE_CIRCLE;

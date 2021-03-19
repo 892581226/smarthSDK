@@ -2,7 +2,7 @@ package com.example.smarthome.iot.impl.device.gateway.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,9 +16,6 @@ import com.example.smarthome.iot.impl.device.gateway.adapter.AppendGatewayAdapte
 import com.xhwl.commonlib.base.BaseActivity;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
 
 import static com.xhwl.commonlib.application.MyAPP.addDestoryActivity;

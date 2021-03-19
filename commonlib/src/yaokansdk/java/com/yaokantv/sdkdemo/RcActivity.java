@@ -3,7 +3,7 @@ package com.yaokantv.sdkdemo;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;

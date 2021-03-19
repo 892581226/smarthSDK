@@ -1,14 +1,15 @@
 package com.example.smartsdk;
 
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.xhwl.commonlib.base.BaseActivity;
 import com.xhwl.commonlib.base.router.HomeSmartProvider;
 import com.xhwl.commonlib.base.router.RouterPath;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     private HomeSmartProvider mHomeSmartProvider;
     private Fragment mHomeSmartFragment;

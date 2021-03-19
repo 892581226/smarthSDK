@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         android:layout_height="@dimen/margin_actionsheet_left_right"
         app:layout_constraintTop_toBottomOf="@+id/scene_update_top_layout"/>
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/scene_update_name_info"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_item_single_line"
@@ -52,7 +52,7 @@
             app:layout_constraintRight_toRightOf="parent"
             />
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/scene_update_cut"
@@ -67,7 +67,7 @@
         app:layout_constraintTop_toBottomOf="@+id/scene_update_name_info"/>
 
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/scene_update_icon_layout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_item_single_line"
@@ -109,9 +109,9 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginStart="@dimen/margin_small_size"/>
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/scene_update_cut_linear"
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -144,7 +144,7 @@
             android:gravity="center_vertical"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/scene_update_device_text"
@@ -159,7 +159,7 @@
         android:textSize="@dimen/text_large_size"
         app:layout_constraintTop_toBottomOf="@id/scene_update_cut_linear" />
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:visibility="gone"
         android:id="@+id/scene_update_device_rv"
         android:layout_width="match_parent"
@@ -185,4 +185,4 @@
         app:layout_constraintBottom_toBottomOf="parent"/>
 
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

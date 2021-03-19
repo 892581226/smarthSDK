@@ -16,13 +16,11 @@ import android.os.Build;
 import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
-import android.support.v4.content.FileProvider;
+import androidx.core.content.FileProvider;
 import android.util.Log;
 import android.widget.Toast;
 
 
-import com.example.smarthome.BuildConfig;
-import com.xhwl.commonlib.http.Constant;
 import com.xhwl.commonlib.uiutils.BitmapUtils;
 import com.xhwl.commonlib.uiutils.LogUtils;
 import com.xhwl.commonlib.uiutils.PermissionUtils;

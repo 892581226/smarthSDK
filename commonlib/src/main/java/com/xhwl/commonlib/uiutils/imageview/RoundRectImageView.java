@@ -15,7 +15,7 @@ import android.util.AttributeSet;
 /**
  * 圆角矩形图片
  */
-public class RoundRectImageView extends android.support.v7.widget.AppCompatImageView {
+public class RoundRectImageView extends androidx.appcompat.widget.AppCompatImageView {
     private Paint paint;
 
     public RoundRectImageView(Context context) {

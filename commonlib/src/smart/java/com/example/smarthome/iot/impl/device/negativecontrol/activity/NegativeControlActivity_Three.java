@@ -11,22 +11,17 @@ import com.example.smarthome.iot.impl.device.negativecontrol.bean.NegativeContro
 import com.example.smarthome.iot.impl.device.negativecontrol.dialog.YesOrNoBindDialog;
 import com.example.smarthome.iot.impl.device.negativecontrol.dialog.YesOrNoBindDialog2;
 import com.example.smarthome.iot.net.Constant;
-import com.example.smarthome.iot.util.DeviceControlUtil;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.convert.StringConvert;
 import com.lzy.okgo.model.Response;
 import com.lzy.okrx2.adapter.ObservableResponse;
 import com.xhwl.commonlib.base.BaseActivity;
-import com.xhwl.commonlib.constant.SpConstant;
-import com.xhwl.commonlib.uiutils.SPUtils;
-import com.xhwl.commonlib.uiutils.udpsocket.ReceiveUtils;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;

@@ -1,15 +1,13 @@
 package com.example.smarthome.iot.impl.device.cateye.activity;
 
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.text.Html;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -18,7 +16,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.eques.icvss.api.ICVSSDeviceInstance;
 import com.eques.icvss.api.ICVSSListener;
 import com.eques.icvss.api.ICVSSUserInstance;
 import com.eques.icvss.core.module.user.BuddyType;

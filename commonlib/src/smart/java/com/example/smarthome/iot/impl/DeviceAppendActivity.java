@@ -1,12 +1,11 @@
 package com.example.smarthome.iot.impl;
 
-import android.appwidget.AppWidgetProvider;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.FrameLayout;
@@ -17,11 +16,9 @@ import android.widget.Toast;
 
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import com.example.smarthome.R;
 import com.example.smarthome.iot.DeviceAppendFragment;
 import com.example.smarthome.iot.DeviceSearchActivity;
-import com.example.smarthome.iot.DeviceType;
 import com.example.smarthome.iot.adapter.DeviceCategoryListAdapter;
 import com.example.smarthome.iot.entry.CommonResp;
 import com.example.smarthome.iot.entry.DeviceListVo;
@@ -32,11 +29,8 @@ import com.lzy.okgo.convert.StringConvert;
 import com.lzy.okgo.model.Response;
 import com.lzy.okrx2.adapter.ObservableResponse;
 import com.xhwl.commonlib.base.BaseActivity;
-import com.xhwl.commonlib.uiutils.JsonUtils;
 import com.xhwl.commonlib.uiutils.LogUtils;
 import com.xhwl.commonlib.uiutils.SPUtils;
-import com.xhwl.commonlib.uiutils.ToastUtil;
-import com.xhwl.commonlib.uiutils.udpsocket.ReceiveUtils;
 import com.zyao89.view.zloading.ZLoadingDialog;
 
 import java.util.ArrayList;

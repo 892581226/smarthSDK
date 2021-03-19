@@ -1,16 +1,14 @@
 package com.example.smarthome.iot.adapter;
 
-import android.support.annotation.Nullable;
-import android.widget.ImageView;
+import androidx.annotation.Nullable;
+
 import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.example.smarthome.R;
 import com.example.smarthome.iot.entry.SmartInfoList;
-import com.example.smarthome.iot.entry.SmartInfoVo;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class FamilyMoveAdapter extends BaseQuickAdapter<SmartInfoList.FamilysBean, BaseViewHolder> {

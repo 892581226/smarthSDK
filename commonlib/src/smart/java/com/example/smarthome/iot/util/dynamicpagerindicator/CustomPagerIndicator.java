@@ -1,7 +1,7 @@
 package com.example.smarthome.iot.util.dynamicpagerindicator;
 
 import android.content.Context;
-import android.support.v4.view.PagerAdapter;
+import androidx.viewpager.widget.PagerAdapter;
 import android.util.AttributeSet;
 import android.view.View;
 

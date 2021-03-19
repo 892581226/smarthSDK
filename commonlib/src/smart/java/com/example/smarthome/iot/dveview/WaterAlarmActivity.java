@@ -1,11 +1,11 @@
 package com.example.smarthome.iot.dveview;
 
 import android.content.Intent;
-import android.os.Parcelable;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,23 +20,18 @@ import com.example.smarthome.R;
 import com.example.smarthome.iot.DeviceInfoActivity;
 import com.example.smarthome.iot.adapter.SceneMsgAdapter;
 import com.example.smarthome.iot.entry.CommonResp;
-import com.example.smarthome.iot.entry.DeviceRealStateVo;
 import com.example.smarthome.iot.entry.SensorInfoVo;
 import com.example.smarthome.iot.entry.SmartInfoVo;
 import com.example.smarthome.iot.entry.eventbus.UpdateFamilyEvent;
 import com.example.smarthome.iot.net.Constant;
-import com.example.smarthome.iot.util.DeviceControlUtil;
 import com.google.gson.Gson;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.convert.StringConvert;
 import com.lzy.okgo.model.Response;
 import com.lzy.okrx2.adapter.ObservableResponse;
-import com.scwang.smartrefresh.header.FunGameBattleCityHeader;
-import com.scwang.smartrefresh.header.MaterialHeader;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.header.ClassicsHeader;
-import com.scwang.smartrefresh.layout.header.FalsifyHeader;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 import com.xhwl.commonlib.base.BaseActivity;
 import com.xhwl.commonlib.uiutils.LogUtils;
@@ -103,7 +98,7 @@ public class WaterAlarmActivity extends BaseActivity implements View.OnClickList
         mSmartRefresh.setRefreshHeader(new ClassicsHeader(this));
         mSmartRefresh.setOnRefreshListener(new OnRefreshListener() {
             @Override
-            public void onRefresh(@android.support.annotation.NonNull RefreshLayout refreshLayout) {
+            public void onRefresh(@androidx.annotation.NonNull RefreshLayout refreshLayout) {
                 getSensorInfo();
             }
         });

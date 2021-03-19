@@ -1,13 +1,12 @@
 package com.example.smarthome.iot;
 
 import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.annotation.RequiresApi;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
+import androidx.annotation.RequiresApi;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;

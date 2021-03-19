@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.v4.app.FragmentTransaction;
+import androidx.fragment.app.FragmentTransaction;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.FrameLayout;
@@ -28,7 +28,6 @@ import com.lzy.okgo.model.Response;
 import com.lzy.okrx2.adapter.ObservableResponse;
 import com.xhwl.commonlib.base.BaseActivity;
 import com.xhwl.commonlib.uiutils.LogUtils;
-import com.xhwl.commonlib.uiutils.SPUtils;
 import com.zyao89.view.zloading.ZLoadingDialog;
 
 import java.util.ArrayList;
