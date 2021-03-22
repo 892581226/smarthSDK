@@ -1,9 +1,8 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.jakewharton.butterknife'  //再次添加butterknife插件的应用
-/*apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.892581226'  //注意com.github.github账号*/
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.892581226'  //注意com.github.github账号
 def propertiesFile = file("../config.properties")
-apply from : "publishNative.gradle"
 Properties props = new Properties()
 props.load(new FileInputStream(propertiesFile))
 
@@ -100,7 +99,8 @@ android {
 }
 repositories {
     flatDir {
-        dirs 'libs' //this way we can find the .aar file in libs folder
+        //由于libs module 中引用啦aar,所以要这样处理
+        dirs project(":commonlib").file("libs")
     }
 }
 dependencies {
