@@ -97,11 +97,14 @@ android {
         }
     }
 }
-
+repositories {
+    flatDir {
+        dirs 'libs' //this way we can find the .aar file in libs folder
+    }
+}
 dependencies {
-    implementation project(path: ':yaokansdk')
     testImplementation 'junit:junit:4.12'
-/*    provided files('libs\\yaokansdk.aar')*/
+   /* provided files('libs\\yaokansdk.aar')*/
     api fileTree(dir: 'libs', include: ['*.jar','**/*.jar','*.aar'])
     api dependen.supportV4
     api dependen.supportV7

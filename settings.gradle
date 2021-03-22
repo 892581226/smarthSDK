@@ -1,4 +1,3 @@
-include ':yaokansdk'
 include ':commonlib'
 include ':app'
 rootProject.name = "SmartSdk"
