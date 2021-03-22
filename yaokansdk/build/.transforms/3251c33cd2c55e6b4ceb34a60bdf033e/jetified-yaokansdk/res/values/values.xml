@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_confirm">确定</string>
+    <string name="app_name">yaokansdk</string>
+    <string name="config_suc">配网成功</string>
+    <string name="get_device_hotspot_fail">获取设备热点失败</string>
+    <string name="get_did_fail">获取DID失败</string>
+    <string name="loading">加载中...</string>
+    <string name="smart_config">配网中...</string>
+</resources>
