@@ -1,9 +1,9 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.jakewharton.butterknife'  //再次添加butterknife插件的应用
-apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.892581226'  //注意com.github.github账号
+/*apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.892581226'  //注意com.github.github账号*/
 def propertiesFile = file("../config.properties")
-apply from :"AndroidDoc.gradle"
+apply from : "publishNative.gradle"
 Properties props = new Properties()
 props.load(new FileInputStream(propertiesFile))
 
