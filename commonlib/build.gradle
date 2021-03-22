@@ -99,7 +99,7 @@ android {
 }
 
 dependencies {
-    implementation project(path: ':yaokansdk')
+    //implementation project(path: ':yaokansdk')
     testImplementation 'junit:junit:4.12'
 /*    provided files('libs\\yaokansdk.aar')*/
     api fileTree(dir: 'libs', include: ['*.jar','**/*.jar','*.aar'])
