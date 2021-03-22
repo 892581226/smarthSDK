@@ -28,7 +28,6 @@ buildscript {
 }
 
 allprojects {
-    group "yuZhiQiang"
 
     repositories {
         google()
