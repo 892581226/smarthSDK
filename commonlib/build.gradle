@@ -105,6 +105,7 @@ repositories {
 dependencies {
     testImplementation 'junit:junit:4.12'
    /* provided files('libs\\yaokansdk.aar')*/
+    api files('libs\\yaokansdk.aar')
     api fileTree(dir: 'libs', include: ['*.jar','**/*.jar','*.aar'])
     api dependen.supportV4
     api dependen.supportV7
