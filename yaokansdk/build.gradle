@@ -1,0 +1,4 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('yaokansdk.aar'))
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.892581226'  //注意com.github.github账号
